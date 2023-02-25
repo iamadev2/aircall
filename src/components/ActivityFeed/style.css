@@ -1,0 +1,11 @@
+.activityFeed {
+    /* display: flex; */
+    flex-direction: column;
+    /* height: 100%; */
+    overflow: auto;
+    font-weight: 600;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
