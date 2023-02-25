@@ -4,7 +4,7 @@ import ActivityFeed from "../components/ActivityFeed";
 import ActivityDetail from "../components/ActivityDetail";
 import Archived from "../components/Archived";
 import arrow from '../arrow.png';
-
+import archive from '../archive.png';
 const BASE_URL = "https://charming-bat-singlet.cyclic.app/https://cerulean-marlin-wig.cyclic.app";
 
 function MainPage() {
@@ -44,6 +44,7 @@ function MainPage() {
                     {!selectedActivity &&
                         <div className="activityArchiveHeader header-transition-show">
                             {openArchive && <img src={arrow} width="20" height="20" onClick={() => setOpenArchive(false)} />}
+                            <img className="mainArchive" src={archive} width="20" height="20"  />
                             <h1 className="mainArchive" onClick={() => setOpenArchive(true)}>Archived Calls</h1>
                         </div>
                     }

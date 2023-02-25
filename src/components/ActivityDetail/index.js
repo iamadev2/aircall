@@ -16,7 +16,7 @@ const ActivityDetail = ({ selectedActivity, handleActivityClick, fetchActivities
             const response = await axios.patch(`https://charming-bat-singlet.cyclic.app/https://cerulean-marlin-wig.cyclic.app/activities/${call.id}`, {
                 is_archived: !call.is_archived,
             });
-            
+
             let selectedActivityObj = selectedActivity;
             selectedActivityObj['is_archived'] = !call.is_archived;
             setCall(selectedActivityObj);
@@ -71,7 +71,6 @@ const ActivityDetail = ({ selectedActivity, handleActivityClick, fetchActivities
                 </a>
             </div>
             <div className="activityDetailInfo">
-
                 <div >
                     {renderArrow(call.direction)}
                 </div>
